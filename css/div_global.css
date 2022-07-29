@@ -1,0 +1,116 @@
+
+/* ***************************************************** 全局样式 **************************************** */
+.layout#content-inner {
+  max-width: 1545px;
+}
+@media screen and (min-width: 1300px) {
+  #content-inner.layout {
+    display: flex;
+    justify-content: center;
+    /* padding: .5rem 1.5rem; */
+    padding-top: .65rem;
+    padding-bottom: .5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .layout {
+    padding: 0;
+  }
+}
+.layout>div:first-child:not(.recent-posts) {
+  box-shadow: var(--heo-shadow-border);
+  padding: 1.2rem 2.5rem;
+  border-radius: 12px;
+  background: var(--heo-card-bg);
+  border: var(--style-border);
+}
+@media screen and (max-width: 900px) {
+  .layout>div:first-child:not(.recent-posts) {
+    border-radius: 0;
+    padding: 1.3rem 1rem 0rem 1rem !important;
+    box-shadow: none;
+  }
+}
+
+/* 评论 */
+/* #post-comment #twikoo .tk-input.el-textarea >textarea {
+  border-radius: 12px;
+} */
+
+
+/* 去除footer底部多余 */
+#footer:before {
+  content: none;
+}
+
+/* footer底部打字效果 */
+#footer #footer-wrap .footer-banner-left {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 30px;
+  color: var(--heo-fontcolor);
+}
+#footer #footer-wrap {
+  padding: 20px 0px;
+  border-top: 1px #e3e8f7 solid;
+  transition: .3s;
+}
+[data-theme=dark] #footer #footer-wrap {
+  background: var(--heo-secondbg);
+  border-top: 1px var(--style-border) solid;
+  transition: .3s;
+}
+#footer #footer-wrap #footer-banner-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+#footer #footer-wrap .footer-banner-right {
+  display: flex;
+  color: var(--heo-fontcolor);
+}
+#footer-wrap a {
+  color: var(--heo-fontcolor);
+}
+#footer-wrap a:hover {
+  color: var(--heo-main-color);
+  text-decoration: none;
+}
+#footer {
+  margin-top: 20px;
+  background: linear-gradient(180deg,var(--heo-background) 0,var(--heo-card-bg) 25%);
+}
+[data-theme=dark] #footer:before {
+  background-color: var(--heo-none)!important;
+  z-index: -1;
+}
+#footer-wrap .framework-info {
+  margin-left: 1rem;
+}
+
+#footer #footer_deal {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+a.deal_link {
+  margin: 1rem 27px;
+}
+#footer_deal i {
+  font-size: 1.5rem;
+  color: var(--heo-fontcolor);
+  transition: .3s;
+}
+#footer #footer_deal a:hover i {
+  color: var(--heo-main-color);
+  transition: .3s;
+}
+
+
+
+/* **************************************************************** 动态分类、标签条样式 */
+
