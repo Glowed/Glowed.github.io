@@ -77,3 +77,13 @@ function textbtn() {
     }
   }
 }
+
+
+// 首页上的点击文章信息事件 (post-ui.pug)
+function myBtncc() {
+  var e = window.event;
+  var targ = e.target;  /* 获取鼠标点击的元素 */
+  var thref = targ.getAttribute('href');
+  // console.log(tname);
+  window.location.href = window.location.origin + thref;
+}

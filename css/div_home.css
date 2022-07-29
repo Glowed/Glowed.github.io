@@ -344,6 +344,13 @@
 .blog-slider__img img {
   border-radius: 0px !important;
 }
+.blog-slider__title {
+  transition: .3s !important;
+}
+.blog-slider__title:hover {
+  color: var(--heo-main-color);
+  transition: .3s !important;
+}
 /* 文章 */
 #recent-posts>.recent-post-item>.recent-post-info>.article-title {
   font-size: 1.22rem;
