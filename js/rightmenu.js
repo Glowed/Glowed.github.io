@@ -131,11 +131,6 @@ $('#rightMenu-tags').on('click',function(){
   RemoveRightMenu();
 });
 
-// 简体繁体切换
-$('#menu-translate').on('click',function(){
-    RemoveRightMenu();
-    translateInitialization();
-});
 
 //复制选中文字
 kk.copySelect = function(){
@@ -226,6 +221,15 @@ function handlerClick(event) {
 //   document.removeEventListener('click', handlerClick)
 // },5000)
 
+
+// 简体繁体切换
+$('#menu-translate').on('click',function(){
+  RemoveRightMenu();
+  // 原本调用方案（会时灵时不灵）
+  // translateInitialization();
+  // 直接调用 butterfly 原生按钮方法
+  document.querySelector('#translateLink').click();
+});
 
 
 /* eslint-disable no-undef */

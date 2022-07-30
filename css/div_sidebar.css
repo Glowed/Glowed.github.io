@@ -110,8 +110,7 @@ a.card-archive-list-link-more{
 }
 @media screen and (min-width:1300px){
   #aside-content{
-      max-width:300px;
-      min-width:300px;
+      width: 20%;
       padding-left:.66rem
   }
   #aside-content .sticky_layout{
@@ -434,7 +433,7 @@ a.card-archive-list-link-more{
   color:var(--heo-fontcolor)!important;
   font-size:.8rem;
   border-radius:8px;
-  padding: 0px 0.3rem;
+  padding: 0px 0.5rem;
 }
 #aside-content .card-tag-cloud a:hover{
   background:var(--heo-theme);
@@ -443,7 +442,8 @@ a.card-archive-list-link-more{
 }
 @media screen and (min-width:1300px){
   #aside-content .card-tag-cloud a:hover{
-      transform:scale(1.1)
+      transform:scale(1.03);
+      border-radius: 6px;
   }
   #aside-content .card-tag-cloud a:active{
       transform:scale(.97)
@@ -480,6 +480,7 @@ a.card-archive-list-link-more{
 /* .card-widget.card-categories {
   display: none;
 } */
+
 /* 调整标签云 */
 /* .card-widget.card-tags {
   margin-top: 0px !important;
