@@ -506,10 +506,10 @@ a.darkmode_switchbutton{
   color: var(--font-color);
 }
 .post-bg #nav #nav-right .nav-rightbutton.site-page {
-  color: var(--heo-white) !important;
+  color: var(--heo-white);
 }
 .post-bg.nav-fixed #nav #nav-right .nav-rightbutton.site-page {
-  color: var(--font-color) !important;
+  color: var(--font-color);
 }
 #page-header #nav #nav-right .fa-fw.iconfont.icon-3sousuolan {
   padding-bottom: 2px;
@@ -580,7 +580,7 @@ a.darkmode_switchbutton{
 }
 /* 导航白天黑夜模式点击切换图标颜色效果 */
 [data-theme=dark] #page-header #nav .darkmode_switchbutton {
-  color: var(--heo-yellow);
+  color: var(--heo-yellow) !important;
 }
 
 

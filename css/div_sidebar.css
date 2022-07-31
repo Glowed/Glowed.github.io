@@ -359,7 +359,10 @@ a.card-archive-list-link-more{
   width:40px;
   height:40px;
   display:flex;
-  align-items:center
+  align-items:center;
+  
+  padding: 8px 11px;
+  border-radius: 32px;
 }
 #aside-content .card-info .card-info-social-icons i:hover{
   background:var(--heo-secondbg);
@@ -485,6 +488,29 @@ a.card-archive-list-link-more{
 /* .card-widget.card-tags {
   margin-top: 0px !important;
 } */
+
+/* 博客资料 */
+#aside-content .card-info .author-info__description1 {
+  line-height: 1.38;
+  margin: 1rem 0 0.4rem 0;
+  text-align: justify;
+  color: rgba(255, 255, 255, .8);
+}
+#aside-content .card-info .author-info__description1 b {
+  font-weight: bolder;
+  color: var(--heo-white);
+}
+#aside-content .card-info .author-info__description2 {
+  line-height: 1.38;
+  margin: 0.4rem 0;
+  text-align: justify;
+  width: 65%;
+  color: rgba(255, 255, 255, .8);
+}
+#aside-content .card-info .author-info__description2 b {
+  font-weight: bolder;
+  color: var(--heo-white);
+}
 
 /* hr 分割线 */
 .card-allinfo hr {

@@ -5,6 +5,9 @@ kk = {};
 // 鼠标右击a标签的href信息存储
 var strUrl;
 
+// 阅读按钮信息存储
+// var altStr = 1;
+
 kk.showRightMenu = function(isTrue, x=0, y=0){
     let $rightMenu = $('#rightMenu');
     $rightMenu.css('top',x+'px').css('left',y+'px');
@@ -66,6 +69,14 @@ window.oncontextmenu = function(event){
     if (urlinfoname == 'page'){
       document.body.style.setProperty('--heo-main-color', 'rgb(66, 90, 239)'); // 赋值默认主色调
     }
+    // 判断是否为文章页
+    // if (urlinfoname == 'post'){
+    //   // 判断是否点击过阅读模式
+    //   if (altStr == 1) {
+    //     $('#menu-reading').show();
+    //     $('#menu-exitreading').hide();
+    //   }
+    // }
 
     
     // 鼠标默认显示在鼠标右下方，当鼠标靠右或考下时，将菜单显示在鼠标左方\上方
@@ -95,41 +106,42 @@ $('#menu-forward').on('click',function(){window.history.forward(); RemoveRightMe
 // 刷新
 $('#menu-refresh').on('click',function(){window.location.reload();});
 
-kk.switchDarkMode = function(){
+// 切换模式
+// kk.switchDarkMode = function(){
+function rswitchDarkMode (){
     RemoveRightMenu();
-    const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
+    var nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
     if (nowMode === 'light') {
-        activateDarkMode()
-        saveToLocal.set('theme', 'dark', 2)
-        GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)
+      activateDarkMode()
+      saveToLocal.set('theme', 'dark', 2)
+      GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)
     } else {
-        activateLightMode()
-        saveToLocal.set('theme', 'light', 2)
-        GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day)
+      activateLightMode()
+      saveToLocal.set('theme', 'light', 2)
+      GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day)
     }
     // handle some cases
     typeof utterancesTheme === 'function' && utterancesTheme()
     typeof FB === 'object' && window.loadFBComment()
     window.DISQUS && document.getElementById('disqus_thread').children.length && setTimeout(() => window.disqusReset(), 200)
 };
-
-$('#menu-darkmode').on('click',kk.switchDarkMode);
+// $('#menu-darkmode').on('click',kk.switchDarkMode);
 
 // 回到首页
 // $('#menu-home').on('click',function(){window.location.href = window.location.origin;});
 // 回到顶部
 $('#menu-top').on('click',function(){window.location.onclick = btf.scrollToDest(0, 500); RemoveRightMenu();});
 
-// 博客分类
-$('#rightMenu-categories').on('click',function(){
-  window.location.href = window.location.origin+'/categories/';
-  RemoveRightMenu();
-});
-// 博客标签
-$('#rightMenu-tags').on('click',function(){
-  window.location.href = window.location.origin+'/tags/';
-  RemoveRightMenu();
-});
+// // 博客分类
+// $('#rightMenu-categories').on('click',function(){
+//   window.location.href = window.location.origin+'/categories/';
+//   RemoveRightMenu();
+// });
+// // 博客标签
+// $('#rightMenu-tags').on('click',function(){
+//   window.location.href = window.location.origin+'/tags/';
+//   RemoveRightMenu();
+// });
 
 
 //复制选中文字
@@ -207,6 +219,27 @@ $('#menu-share').on('click',function(){
   document.body.removeChild(input);
   RemoveRightMenu();
 });
+
+
+// // 阅读模式
+// $('#menu-reading').on('click',function(){
+//   RemoveRightMenu();
+//   document.querySelector('#readmode').click();
+//   document.querySelector('#post').style.width = '100%';
+//   altStr = 2;
+//   $('#menu-reading').hide();
+//   $('#menu-exitreading').show();
+// });
+// // 退出阅读
+// $('#menu-exitreading').on('click',function(){
+//   RemoveRightMenu();
+//   document.getElementsByClassName('fas fa-sign-out-alt exit-readmode')[0].click();
+//   document.querySelector('#post').style.width = '80%';
+//   altStr = 1;
+//   $('#menu-reading').show();
+//   $('#menu-exitreading').hide();
+// });
+
 
 // 点击右击菜单元素外面
 document.addEventListener('click', handlerClick)  // 监听 document 点击事件
