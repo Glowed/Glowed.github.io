@@ -106,6 +106,7 @@ $('#menu-forward').on('click',function(){window.history.forward(); RemoveRightMe
 // 刷新
 $('#menu-refresh').on('click',function(){window.location.reload();});
 
+
 // 切换模式
 // kk.switchDarkMode = function(){
 function rswitchDarkMode (){
