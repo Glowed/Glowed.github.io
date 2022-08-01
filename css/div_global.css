@@ -200,6 +200,45 @@ span.tags-punctuation {
   color: var(--heo-main-color);
 }
 
+#page {
+  background: var(--heo-background);
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+#page .tag-cloud-list a {
+  color: var(--heo-fontcolor)!important;
+  font-size: 1.4em !important;
+  padding: .2em .5em;
+  background: var(--heo-secondbg);
+  margin: .5em .5em;
+  border-radius: 12px;
+  border: var(--style-border);
+  box-shadow: var(--heo-shadow-border);
+}
+#page .tag-cloud-list a>sup {
+  top: 0;
+  background: var(--heo-card-bg);
+  padding: 2px 4px;
+  border-radius: 8px;
+  color: var(--heo-secondtext);
+  line-height: 1.2;
+  text-align: center;
+  min-width: 35px;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-left: 8px;
+}
+#page .tag-cloud-list a:before {
+  content: '#';
+  opacity: .4;
+  padding-right: 10px;
+}
+#page .tag-cloud-list a:hover {
+  background: var(--heo-main-color);
+  color: var(--heo-white) !important;
+}
+
 
 
 /* PC上隐藏右下角功能菜单 */
