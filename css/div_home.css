@@ -787,6 +787,10 @@ span.recent-post-top-text {
   border: var(--style-border-hover);
   box-shadow: var(--heo-shadow-theme);
 }
+#pagination .page-number.current:hover {
+  background: var(--heo-theme);
+  color: var(--heo-white);
+}
 #pagination .page-number {
   box-shadow: var(--heo-shadow-border);
   border: var(--style-border);

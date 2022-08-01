@@ -63,12 +63,12 @@ window.oncontextmenu = function(event){
 
     // 判断是否为文章外的其他页面，因为没有刷新右击菜单，所以只有这里重新给主色调重新赋值
     // var urlinfo = window.location.pathname;
-    var urlinfoname = document.getElementById("body-wrap").className;
-    urlinfoname = decodeURIComponent(urlinfoname);
-    // console.log(urlinfoname);
-    if (urlinfoname == 'page'){
-      document.body.style.setProperty('--heo-main-color', 'rgb(66, 90, 239)'); // 赋值默认主色调
-    }
+    // var urlinfoname = document.getElementById("body-wrap").className;
+    // urlinfoname = decodeURIComponent(urlinfoname);
+    // // console.log(urlinfoname);
+    // if (urlinfoname == 'page'){
+    //   document.body.style.setProperty('--heo-main-color', 'rgb(66, 90, 239)'); // 赋值默认主色调
+    // }
     // 判断是否为文章页
     // if (urlinfoname == 'post'){
     //   // 判断是否点击过阅读模式

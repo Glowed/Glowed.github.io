@@ -21,16 +21,7 @@ function topcolor() {
         document.body.style.setProperty('--heo-backSecondary-color', payload.secondary); // 次要色调
       }
     })
+  }else {
+    document.body.style.setProperty('--heo-main-color', 'rgb(66, 90, 239)'); // 赋值默认色调
   }
 }
-// 刷新时候这里重新获取一次，这里只有刷新才会触发
-// var imgStr = document.getElementById('post-cover');
-// var img = imgStr.src;
-// RGBaster.colors(img, {
-//   paletteSize: 30,
-//   exclude: [ 'rgb(255,255,255)', 'rgb(0,0,0)' ],
-//   success: function(payload) {
-//     document.body.style.setProperty('--heo-main-color', payload.dominant); 
-//     document.body.style.setProperty('--heo-backSecondary-color', payload.secondary); 
-//   }
-// })
