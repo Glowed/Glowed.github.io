@@ -238,7 +238,19 @@ span.tags-punctuation {
   background: var(--heo-main-color);
   color: var(--heo-white) !important;
 }
-
+/* 分页按钮 */
+#archive #pagination .page-number, #category #pagination .page-number, #tag #pagination .page-number {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: calc(2rem - 2px);
+  border-radius: 8px;
+  margin: 0 6px;
+  transition: .3s;
+  line-height: 2.5rem;
+}
+#archive #pagination #pagination, #category #pagination #pagination, #tag #pagination #pagination {
+  margin-top: .25rem;
+}
 
 
 /* PC上隐藏右下角功能菜单 */

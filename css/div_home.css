@@ -783,9 +783,9 @@ span.recent-post-top-text {
   margin-top: 10px;
 }
 #pagination .page-number.current {
-  background: var(--heo-theme);
-  border: var(--style-border-hover);
-  box-shadow: var(--heo-shadow-theme);
+  background: var(--heo-theme) !important;
+  border: var(--style-border-hover) !important;
+  box-shadow: var(--heo-shadow-theme) !important;
 }
 #pagination .page-number.current:hover {
   background: var(--heo-theme);
@@ -803,6 +803,7 @@ span.recent-post-top-text {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
 }
 a.extend.next {
   right: 0;
