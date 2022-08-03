@@ -59,10 +59,7 @@
   cursor:pointer;
   border:var(--style-border)
 }
-#recent-posts .recent-post-item:hover{
-  border:var(--style-border-hover);
-  box-shadow:var(--heo-shadow-main)
-}
+
 @media screen and (min-width:900px){
   #recent-posts>.recent-post-item:hover .post_cover img.post_bg{
       transform:scale(1.1)
@@ -623,6 +620,10 @@ a.category_button:hover:after{
   .top_post_group .top_post_item:hover .post_info a{
     color: var(--heo-theme) !important;
   }
+  #recent-posts .recent-post-item:hover{
+    border:var(--style-border-hover);
+    box-shadow:var(--heo-shadow-main)
+  }
 }
 
 a.category_button:after {
@@ -887,6 +888,16 @@ a.extend.prev {
   background: var(--heo-card-bg);
   color: var(--heo-theme);
   cursor: pointer;
+}
+
+/* *************************** 无线端样式 ****************** */
+@media screen and (max-width: 768px) {
+  #recent-posts .recent-post-item {
+    height: auto !important;
+  }
+  .recent-post-item:hover {
+    box-shadow: none !important;
+  }
 }
 
 /********************************************************  暗锚（首页翻页后导航遮蔽内容临时解决方案） */
