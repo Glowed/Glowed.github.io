@@ -426,10 +426,10 @@
 }
 .home_top_group {
   border-radius: 12px;
-  overflow: auto;
+  /* overflow: auto; */
   width: 100%;
   margin-bottom: -5px;
-  padding-bottom: 7.5px;
+  padding-bottom: 6px;
   /* overflow: hidden; */
   overflow: visible;
   overflow-x: visible;
@@ -443,7 +443,7 @@
   margin-top: 1rem;
   /* overflow: auto; */
   overflow-x: visible; /* 横向滚动 */
-  overflow-y: hidden; /* 禁止竖向滚动*/
+
   border-radius: 12px;
 }
 .homeTopGroup::-webkit-scrollbar {
