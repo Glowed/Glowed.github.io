@@ -598,10 +598,31 @@ a.category_button:hover:after{
   width: 3rem;
   transition: .8s;
 }
-/* 测试 */
-.category_item:hover {
-  width: calc(100% / 2 - .33rem);
-  transition: .8s;
+
+
+/* PC端动画 */
+@media screen and (min-width: 1300px) {
+  .category_item:hover {
+    width: calc(100% / 2 - .33rem);
+    transition: .8s;
+  }
+  .top_post_group .top_post_item:hover {
+    border: var(--style-hover-border);
+    box-shadow: var(--heo-shadow-theme);
+  }
+  .top_post_group .top_post_item:hover{
+    /* height: 80px; */
+    transition: 0.3s 0s;
+    /* transform: translateY(-5px); */
+    transform: scale(1.03,1.03);
+  }
+  .top_post_group .top_post_item:hover span.recent-post-top-text {
+    left: 0px;
+    transition: .3s;
+  }
+  .top_post_group .top_post_item:hover .post_info a{
+    color: var(--heo-theme) !important;
+  }
 }
 
 a.category_button:after {
@@ -648,11 +669,6 @@ a.category_button:after {
   transition: .3s;
 }
 
-
-.top_post_group .top_post_item:hover {
-  border: var(--style-hover-border);
-  box-shadow: var(--heo-shadow-theme);
-}
 .top_post_group .top_post_item .post_cover {
   width: 100%;
   /* height: 110px; */
@@ -667,12 +683,6 @@ a.category_button:after {
   background: var(--mj-secondbg);
   transition: .3s;
   transform: translateY(-5px);
-}
-.top_post_group .top_post_item:hover{
-  /* height: 80px; */
-  transition: 0.3s 0s;
-  /* transform: translateY(-5px); */
-  transform: scale(1.03,1.03);
 }
 .top_post_group .top_post_item .post_cover .post_cover_info {
   position: absolute;
@@ -709,9 +719,7 @@ a.category_button:after {
   color: var(--mj-fontcolor) !important;
   transition: 0;
 }
-.top_post_group .top_post_item:hover .post_info a{
-  color: var(--heo-theme) !important;
-}
+
 .top_post_group .top_post_item .post_info {
   padding: .4rem .6rem .4rem .6rem!important;
   transition: .3s;
@@ -745,10 +753,6 @@ span.recent-post-top-text {
   border-radius: 0 0 12px 0;
   transition: .3s;
   cursor: pointer;
-}
-.top_post_group .top_post_item:hover span.recent-post-top-text {
-  left: 0px;
-  transition: .3s;
 }
 
 .category_button.bikan {
