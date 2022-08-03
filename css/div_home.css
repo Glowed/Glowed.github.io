@@ -623,7 +623,7 @@ a.category_button:after {
 }
 .top_post_group{
   display: flex;
-  position: relative;
+  /* position: relative; */
 }
 .top_post_group .top_post_item {
   display: flex;
