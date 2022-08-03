@@ -430,7 +430,7 @@
   width: 100%;
   margin-bottom: -5px;
   padding-bottom: 7.5px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .homeTopGroup {
@@ -439,7 +439,7 @@
   flex-wrap: nowrap;
   width: 100%;
   margin-top: 1rem;
-  overflow: auto;
+  /* overflow: auto; */
   overflow-x: score;
   border-radius: 12px;
 }
@@ -543,7 +543,7 @@ div#banners:hover{
   min-width: 200px;
 }
 .homeTopGroup .category_item {
-  overflow: auto;
+  overflow: hidden;
   transform: scale(1);
   transition: .8s;
   height: 48%;
@@ -566,7 +566,7 @@ div#banners:hover{
   color: var(--mj-white);
   transition: all .4s cubic-bezier(.39,.575,.565,1);
   transform: scale(1);
-  overflow: auto;
+  overflow: hidden;
   font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei;
 }
 .category_button_text {
@@ -689,7 +689,7 @@ a.category_button:after {
   font-weight: 400;
   margin: 20px 0;
   -webkit-line-clamp: 2;
-  overflow: auto;
+  overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
@@ -715,7 +715,7 @@ a.category_button:after {
 }
 .top_post_group .top_post_item .post_info .article-title {
   -webkit-line-clamp: 2;
-  overflow: auto;
+  overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   line-height: 1.5;
