@@ -428,8 +428,8 @@
   border-radius: 12px;
   /* overflow: auto; */
   width: 100%;
-  margin-bottom: -5px;
-  padding-bottom: 6px;
+  margin-bottom: -9px;
+  /* padding-bottom: 6px; */
   /* overflow: hidden; */
   /* overflow: visible;
   overflow-x: visible; */
@@ -441,6 +441,7 @@
   flex-wrap: nowrap;
   width: 100%;
   margin-top: 1rem;
+  padding-bottom: 10px;
   /* overflow: auto; */
   overflow-x: scroll; /* 横向滚动 */
   overflow-y: hidden; /* 竖向滚动 */
