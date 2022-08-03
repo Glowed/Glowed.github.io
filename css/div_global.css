@@ -259,3 +259,15 @@ span.tags-punctuation {
     display: none;
   }
 }
+
+
+/* 移动端底部图标调整 */
+@media screen and (max-width: 769px) {
+  #footer #footer_deal {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #footer_deal .main_footerlog {
+    display: none;
+  }
+}
