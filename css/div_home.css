@@ -440,7 +440,7 @@
   width: 100%;
   margin-top: 1rem;
   /* overflow: auto; */
-  overflow-x: score;
+  overflow-x: scroll;
   border-radius: 12px;
 }
 .homeTopGroup::-webkit-scrollbar {
@@ -636,7 +636,7 @@ a.category_button:after {
   margin-left: .5rem;
   background: var(--mj-card-bg);
   border-radius: 12px;
-  overflow: auto;
+  overflow: hidden;
   border: var(--style-border);
   position: relative;
   box-shadow: var(--heo-shadow-border);
@@ -653,7 +653,7 @@ a.category_button:after {
   /* height: 110px; */
   height: 280px;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
 }
 .top_post_group .top_post_item .post_cover img {
   object-fit: cover;
