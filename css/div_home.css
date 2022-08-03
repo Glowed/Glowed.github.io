@@ -636,7 +636,7 @@ a.category_button:after {
   margin-left: .5rem;
   background: var(--mj-card-bg);
   border-radius: 12px;
-  overflow: hidden;
+  overflow: auto;
   border: var(--style-border);
   position: relative;
   box-shadow: var(--heo-shadow-border);
@@ -715,7 +715,7 @@ a.category_button:after {
 }
 .top_post_group .top_post_item .post_info .article-title {
   -webkit-line-clamp: 2;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   line-height: 1.5;
