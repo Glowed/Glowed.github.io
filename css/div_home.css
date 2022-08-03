@@ -440,8 +440,8 @@
   width: 100%;
   margin-top: 1rem;
   /* overflow: auto; */
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow-x: scroll; /* 横向滚动 */
+  overflow-y: hidden; /* 禁止竖向滚动*/
   border-radius: 12px;
 }
 .homeTopGroup::-webkit-scrollbar {
