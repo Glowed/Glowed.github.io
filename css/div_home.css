@@ -430,7 +430,9 @@
   width: 100%;
   margin-bottom: -5px;
   padding-bottom: 7.5px;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow: visible;
+  overflow-x: visible;
 }
 
 .homeTopGroup {
@@ -440,7 +442,7 @@
   width: 100%;
   margin-top: 1rem;
   /* overflow: auto; */
-  overflow-x: scroll; /* 横向滚动 */
+  overflow-x: visible; /* 横向滚动 */
   overflow-y: hidden; /* 禁止竖向滚动*/
   border-radius: 12px;
 }
