@@ -441,6 +441,7 @@
   margin-top: 1rem;
   /* overflow: auto; */
   overflow-x: scroll;
+  overflow-y: hidden;
   border-radius: 12px;
 }
 .homeTopGroup::-webkit-scrollbar {
