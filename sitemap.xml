@@ -332,13 +332,6 @@
   </url>
   
   <url>
-    <loc>https://blog.yeooe.cn/tags/%E8%BE%93%E5%85%A5%E7%89%B9%E6%95%88/</loc>
-    <lastmod>2023-02-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.yeooe.cn/tags/hexo%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86/</loc>
     <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -374,7 +367,7 @@
   </url>
   
   <url>
-    <loc>https://blog.yeooe.cn/tags/%E7%BD%91%E9%A1%B5%E5%89%8D%E7%AB%AF/</loc>
+    <loc>https://blog.yeooe.cn/tags/%E8%BE%93%E5%85%A5%E7%89%B9%E6%95%88/</loc>
     <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -382,6 +375,13 @@
   
   <url>
     <loc>https://blog.yeooe.cn/tags/%E5%B9%B2%E8%B4%A7/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yeooe.cn/tags/%E7%BD%91%E9%A1%B5%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
