@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>博客网站域名更换</title>
+      <link href="/post/987c43c1.html"/>
+      <url>/post/987c43c1.html</url>
+      
+        <content type="html"><![CDATA[<p>域名已经更换，新域名 blog.onestarg.com</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 域名 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>用Vercel部署Meting-API，防止音乐播放器有时无法播放</title>
       <link href="/post/94d87788.html"/>
       <url>/post/94d87788.html</url>
